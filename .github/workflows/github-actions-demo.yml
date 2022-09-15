@@ -11,4 +11,4 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
       - run: echo "${{ env.env_test }}"
-      - run: echo "${{ secrets.SECRET_TEST }}"
+      - run: echo "${{ secrets.secret_test }}" 
