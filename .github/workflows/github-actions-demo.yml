@@ -25,7 +25,8 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: 22
         script: |
-          cd ~/project/node/chatroom
+          cd ~/project/node/github_action
           git pull origin main
           git status
           npm install --only=prod
+          pm2 restart github_action
