@@ -12,3 +12,5 @@ jobs:
       - run: bats -v
       - run: echo "${{ env.test }}"
       - run: echo "${{ secrets.test }}" 
+      - run: echo "${{ secrets.test2 }}" 
+
